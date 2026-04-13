@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main-view" class="view active">
+            <header class="header">
+                <h1>Quiz Master</h1>
+                <button id="theme-toggle" aria-label="Toggle theme">◐</button>
+                <button id="fullscreen-toggle" aria-label="Toggle fullscreen">⛶</button>
+            </header>
+            <div id="categories-container"></div>
+        </div>
+
+        <div id="question-view" class="view">
+            <div class="question-content">
+                <p id="question-text"></p>
+                <img id="question-image" src="" alt="" style="display: none;">
+            </div>
+        </div>
+
+        <div id="answer-view" class="view">
+            <div class="answer-content">
+                <p id="answer-text"></p>
+                <img id="answer-image" src="" alt="" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <div id="controls-hint">Press T for theme, F for fullscreen</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

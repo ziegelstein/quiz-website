@@ -1,0 +1,127 @@
+{
+  "categories": [
+    {
+      "name": "Geography",
+      "questions": [
+        {
+          "id": "geo-1",
+          "difficulty": 1,
+          "question": {
+            "text": "What is the capital of France?",
+            "image": null
+          },
+          "answer": {
+            "text": "Paris",
+            "image": null
+          }
+        },
+        {
+          "id": "geo-2",
+          "difficulty": 2,
+          "question": {
+            "text": "Which river is the longest in the world?",
+            "image": null
+          },
+          "answer": {
+            "text": "The Nile",
+            "image": null
+          }
+        },
+        {
+          "id": "geo-3",
+          "difficulty": 3,
+          "question": {
+            "text": "What is the smallest country in the world by area?",
+            "image": null
+          },
+          "answer": {
+            "text": "Vatican City",
+            "image": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "questions": [
+        {
+          "id": "sci-1",
+          "difficulty": 1,
+          "question": {
+            "text": "What planet is known as the Red Planet?",
+            "image": null
+          },
+          "answer": {
+            "text": "Mars",
+            "image": null
+          }
+        },
+        {
+          "id": "sci-2",
+          "difficulty": 2,
+          "question": {
+            "text": "What is the chemical symbol for gold?",
+            "image": null
+          },
+          "answer": {
+            "text": "Au",
+            "image": null
+          }
+        },
+        {
+          "id": "sci-3",
+          "difficulty": 3,
+          "question": {
+            "text": "What is the speed of light in a vacuum (rounded)?",
+            "image": null
+          },
+          "answer": {
+            "text": "300,000 km/s",
+            "image": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "questions": [
+        {
+          "id": "his-1",
+          "difficulty": 1,
+          "question": {
+            "text": "In which year did World War II end?",
+            "image": null
+          },
+          "answer": {
+            "text": "1945",
+            "image": null
+          }
+        },
+        {
+          "id": "his-2",
+          "difficulty": 2,
+          "question": {
+            "text": "Who was the first President of the United States?",
+            "image": null
+          },
+          "answer": {
+            "text": "George Washington",
+            "image": null
+          }
+        },
+        {
+          "id": "his-3",
+          "difficulty": 3,
+          "question": {
+            "text": "Which ancient wonder was located in Alexandria?",
+            "image": null
+          },
+          "answer": {
+            "text": "The Lighthouse (Pharos)",
+            "image": null
+          }
+        }
+      ]
+    }
+  ]
+}
