@@ -105,6 +105,7 @@
         {
           "id": "his-1",
           "difficulty": 1,
+          "difficulty_text": "Easy",
           "question": {
             "text": "In which year did World War II end?",
             "image": null
@@ -117,6 +118,7 @@
         {
           "id": "his-2",
           "difficulty": 2,
+          "difficulty_text": "Medium",
           "question": {
             "text": "Who was the first President of the United States?",
             "image": null
@@ -129,6 +131,7 @@
         {
           "id": "his-3",
           "difficulty": 3,
+          "difficulty_text": "Hard",
           "question": {
             "text": "Which ancient wonder was located in Alexandria?",
             "image": null
@@ -247,6 +250,13 @@
                     }
                     difficulty.appendChild(dot);
                 }
+              
+              if (question.difficulty_text && question.difficulty_text.trim() !== '') {
+                const text = document.createElement('span');
+                text.className = 'difficulty-text';
+                text.textContent = question.difficulty_text;
+                difficulty.appendChild(text);
+              }
 
                 panel.appendChild(difficulty);
                 panel.addEventListener('click', () => handleQuestionClick(question));
@@ -293,6 +303,35 @@
         }
 
         switchView(answerView);
+        triggerConfetti();
+    }
+
+    function triggerConfetti() {
+        const colors = ['#f59e0b', '#3b82f6', '#ef4444', '#22c55e', '#a855f7', '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#8b5cf6', '#14b8a6', '#eab308', '#6366f1', '#f43f5e', '#10b981'];
+        const container = document.createElement('div');
+        container.className = 'confetti-container';
+        document.body.appendChild(container);
+
+        for (let i = 0; i < 75; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.width = (Math.random() * 10 + 5) + 'px';
+            confetti.style.height = (Math.random() * 10 + 5) + 'px';
+            confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+            confetti.style.animationDelay = (Math.random() * 0.5) + 's';
+            confetti.style.animationDuration = '3s';
+            container.appendChild(confetti);
+
+            requestAnimationFrame(() => {
+                confetti.classList.add('animate');
+            });
+        }
+
+        setTimeout(() => {
+            container.remove();
+        }, 3500);
     }
 
     function returnToMain() {
